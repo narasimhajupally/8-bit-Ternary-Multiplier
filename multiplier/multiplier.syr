@@ -1,0 +1,490 @@
+Release 14.7 - xst P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: multiplier.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "multiplier.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "multiplier"
+Output Format                      : NGC
+Target Device                      : xa6slx4-3-csg225
+
+---- Source Options
+Top Module Name                    : multiplier
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/xilinxcodes/multiplier/multiplier.v" into library work
+Parsing module <multiplier>.
+Parsing module <paralleladder>.
+Parsing module <adder>.
+Parsing module <rcompliment>.
+Parsing module <shifter>.
+Parsing module <arshifter>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <multiplier>.
+
+Elaborating module <rcompliment>.
+
+Elaborating module <paralleladder>.
+
+Elaborating module <adder>.
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 291: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 293: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 294: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 295: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 297: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 300: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 301: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 302: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 303: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 304: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 305: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 306: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 307: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 308: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 311: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 313: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 314: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 315: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 317: case condition never applies due to comparison with x or z
+
+Elaborating module <shifter>.
+
+Elaborating module <arshifter>.
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 77: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 78: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 79: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 82: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 112: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 113: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 114: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 117: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 147: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 148: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 149: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 152: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 182: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 183: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 184: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 187: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 217: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 218: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 219: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 222: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 252: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 253: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 254: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 257: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:1127 - "/home/ise/xilinxcodes/multiplier/multiplier.v" Line 249: Assignment to y63 ignored, since the identifier is never used
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 54. All outputs of instance <sf111> of block <shifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 57. All outputs of instance <pd121> of block <paralleladder> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 58. All outputs of instance <arsf121> of block <arshifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 89. All outputs of instance <sf211> of block <shifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 92. All outputs of instance <pd221> of block <paralleladder> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 93. All outputs of instance <arsf221> of block <arshifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 124. All outputs of instance <sf311> of block <shifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 127. All outputs of instance <pd321> of block <paralleladder> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 128. All outputs of instance <arsf321> of block <arshifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 159. All outputs of instance <sf411> of block <shifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 162. All outputs of instance <pd421> of block <paralleladder> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 163. All outputs of instance <arsf421> of block <arshifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 194. All outputs of instance <sf511> of block <shifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 197. All outputs of instance <pd521> of block <paralleladder> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 198. All outputs of instance <arsf521> of block <arshifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 229. All outputs of instance <sf611> of block <shifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 232. All outputs of instance <pd621> of block <paralleladder> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 233. All outputs of instance <arsf621> of block <arshifter> are unconnected in block <multiplier>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <multiplier>.
+    Related source file is "/home/ise/xilinxcodes/multiplier/multiplier.v".
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 54: Output port <o1> of the instance <sf111> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 54: Output port <o2> of the instance <sf111> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 54: Output port <o3> of the instance <sf111> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 58: Output port <o1> of the instance <arsf121> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 58: Output port <o2> of the instance <arsf121> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 58: Output port <o3> of the instance <arsf121> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 89: Output port <o1> of the instance <sf211> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 89: Output port <o2> of the instance <sf211> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 89: Output port <o3> of the instance <sf211> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 93: Output port <o1> of the instance <arsf221> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 93: Output port <o2> of the instance <arsf221> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 93: Output port <o3> of the instance <arsf221> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 124: Output port <o1> of the instance <sf311> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 124: Output port <o2> of the instance <sf311> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 124: Output port <o3> of the instance <sf311> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 128: Output port <o1> of the instance <arsf321> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 128: Output port <o2> of the instance <arsf321> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 128: Output port <o3> of the instance <arsf321> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 159: Output port <o1> of the instance <sf411> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 159: Output port <o2> of the instance <sf411> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 159: Output port <o3> of the instance <sf411> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 163: Output port <o1> of the instance <arsf421> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 163: Output port <o2> of the instance <arsf421> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 163: Output port <o3> of the instance <arsf421> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 194: Output port <o1> of the instance <sf511> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 194: Output port <o2> of the instance <sf511> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 194: Output port <o3> of the instance <sf511> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 198: Output port <o1> of the instance <arsf521> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 198: Output port <o2> of the instance <arsf521> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 198: Output port <o3> of the instance <arsf521> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 229: Output port <o1> of the instance <sf611> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 229: Output port <o2> of the instance <sf611> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 229: Output port <o3> of the instance <sf611> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 233: Output port <o1> of the instance <arsf621> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 233: Output port <o2> of the instance <arsf621> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 233: Output port <o3> of the instance <arsf621> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 236: Output port <o3> of the instance <sf631> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 239: Output port <o3> of the instance <arsf641> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 242: Output port <o3> of the instance <arsf651> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 246: Output port <o3> of the instance <arsf661> is unconnected or connected to loadless signal.
+    Found 8-bit 4-to-1 multiplexer for signal <y11> created at line 76.
+    Found 8-bit 4-to-1 multiplexer for signal <y12> created at line 76.
+    Found 1-bit 4-to-1 multiplexer for signal <y13> created at line 76.
+    Found 8-bit 4-to-1 multiplexer for signal <y21> created at line 111.
+    Found 8-bit 4-to-1 multiplexer for signal <y22> created at line 111.
+    Found 1-bit 4-to-1 multiplexer for signal <y23> created at line 111.
+    Found 8-bit 4-to-1 multiplexer for signal <y31> created at line 146.
+    Found 8-bit 4-to-1 multiplexer for signal <y32> created at line 146.
+    Found 1-bit 4-to-1 multiplexer for signal <y33> created at line 146.
+    Found 8-bit 4-to-1 multiplexer for signal <y41> created at line 181.
+    Found 8-bit 4-to-1 multiplexer for signal <y42> created at line 181.
+    Found 1-bit 4-to-1 multiplexer for signal <y43> created at line 181.
+    Found 8-bit 4-to-1 multiplexer for signal <y51> created at line 216.
+    Found 8-bit 4-to-1 multiplexer for signal <y52> created at line 216.
+    Found 1-bit 4-to-1 multiplexer for signal <y53> created at line 216.
+    Found 8-bit 4-to-1 multiplexer for signal <y61> created at line 251.
+    Found 8-bit 4-to-1 multiplexer for signal <y62> created at line 251.
+    Summary:
+	inferred  17 Multiplexer(s).
+Unit <multiplier> synthesized.
+
+Synthesizing Unit <rcompliment>.
+    Related source file is "/home/ise/xilinxcodes/multiplier/multiplier.v".
+    Summary:
+	no macro.
+Unit <rcompliment> synthesized.
+
+Synthesizing Unit <paralleladder>.
+    Related source file is "/home/ise/xilinxcodes/multiplier/multiplier.v".
+INFO:Xst:3210 - "/home/ise/xilinxcodes/multiplier/multiplier.v" line 279: Output port <cout> of the instance <ad7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <paralleladder> synthesized.
+
+Synthesizing Unit <adder>.
+    Related source file is "/home/ise/xilinxcodes/multiplier/multiplier.v".
+    Found 1-bit tristate buffer for signal <sum> created at line 287
+    Found 1-bit tristate buffer for signal <cout> created at line 287
+    Summary:
+	inferred   2 Tristate(s).
+Unit <adder> synthesized.
+
+Synthesizing Unit <shifter>.
+    Related source file is "/home/ise/xilinxcodes/multiplier/multiplier.v".
+    Summary:
+	no macro.
+Unit <shifter> synthesized.
+
+Synthesizing Unit <arshifter>.
+    Related source file is "/home/ise/xilinxcodes/multiplier/multiplier.v".
+    Summary:
+	no macro.
+Unit <arshifter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 17
+ 1-bit 4-to-1 multiplexer                              : 5
+ 8-bit 4-to-1 multiplexer                              : 12
+# Tristates                                            : 208
+ 1-bit tristate buffer                                 : 208
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 17
+ 1-bit 4-to-1 multiplexer                              : 5
+ 8-bit 4-to-1 multiplexer                              : 12
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2973 - All outputs of instance <pd111> of block <paralleladder> are unconnected in block <multiplier>. Underlying logic will be removed.
+WARNING:Xst:2042 - Unit adder: 2 internal tristates are replaced by logic (pull-up yes): cout, sum.
+
+Optimizing unit <paralleladder> ...
+
+Optimizing unit <multiplier> ...
+
+Optimizing unit <rcompliment> ...
+
+Optimizing unit <adder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block multiplier, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : multiplier.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 110
+#      LUT2                        : 7
+#      LUT3                        : 8
+#      LUT4                        : 13
+#      LUT5                        : 35
+#      LUT6                        : 44
+#      MUXF7                       : 3
+# IO Buffers                       : 32
+#      IBUF                        : 16
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa6slx4csg225-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  107  out of   2400     4%  
+    Number used as Logic:               107  out of   2400     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    107
+   Number with an unused Flip Flop:     107  out of    107   100%  
+   Number with an unused LUT:             0  out of    107     0%  
+   Number of fully used LUT-FF pairs:     0  out of    107     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    132    24%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 18.318ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 395665 / 16
+-------------------------------------------------------------------------
+Delay:               18.318ns (Levels of Logic = 15)
+  Source:            a<1> (PAD)
+  Destination:       y<15> (PAD)
+
+  Data Path: a<1> to y<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            29   1.222   1.497  a_1_IBUF (a_1_IBUF)
+     LUT4:I0->O            1   0.203   0.684  pd261/ad1/coutLogicTrst1 (pd261/c<1>)
+     LUT4:I2->O            1   0.203   0.000  Mmux_y2132_F (N8)
+     MUXF7:I0->O           5   0.131   0.943  Mmux_y2132 (y21<2>)
+     LUT6:I3->O            5   0.205   0.962  Mmux_y3121 (y31<1>)
+     LUT4:I0->O            2   0.203   0.864  pd461/ad1/coutLogicTrst1 (pd461/c<1>)
+     LUT6:I2->O            5   0.203   0.962  Mmux_y4121 (y41<1>)
+     LUT4:I0->O            2   0.203   0.864  pd561/ad1/coutLogicTrst1 (pd561/c<1>)
+     LUT6:I2->O            5   0.203   0.962  Mmux_y5121 (y51<1>)
+     LUT4:I0->O            2   0.203   0.961  pd661/ad1/coutLogicTrst1 (pd661/c<1>)
+     LUT5:I0->O            3   0.203   0.995  pd661/ad3/coutLogicTrst1 (pd661/c<3>)
+     LUT5:I0->O            2   0.203   0.961  pd661/ad5/coutLogicTrst1 (pd661/c<5>)
+     LUT5:I0->O            2   0.203   0.721  pd661/ad7/sumLogicTrst1 (temp661<7>)
+     LUT5:I3->O            1   0.203   0.579  Mmux_y6161 (y_15_OBUF)
+     OBUF:I->O                 2.571          y_15_OBUF (y<15>)
+    ----------------------------------------
+    Total                     18.318ns (6.362ns logic, 11.956ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 5.95 secs
+ 
+--> 
+
+
+Total memory usage is 376472 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   64 (   0 filtered)
+Number of infos    :   41 (   0 filtered)
+
